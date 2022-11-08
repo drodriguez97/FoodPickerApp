@@ -13,6 +13,7 @@ import creds
 #define business id
 
 business_id = creds.client_id
+my_location = creds.my_location
 
 #Define API_KEY, Endpoint, and Header **information that we send along to Yelp in order to successfully request their data**
 API_KEY = creds.api_key
@@ -25,7 +26,7 @@ PARAMETERS = { 'term':'coffee',
               'term': 'cafes',
                 'limit':'50',
                 'radius': '12875', #8 miles
-                'location':'54 Kellog Drive Pomona,CA 91768' } 
+                'location': my_location } 
 
 #Make a request to the yelp API
 response = requests.get(url = ENDPOINT, params= PARAMETERS, headers = HEADERS)
