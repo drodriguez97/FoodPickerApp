@@ -6,7 +6,6 @@
 
 #import modules
 import requests
-from json import loads
 import json
 import creds
 
@@ -40,7 +39,8 @@ names = []
 #iterate through key: business_data["businesses"] and collect value: biz["name"]   
 for biz in business_data["businesses"]:
     name = biz["name"]
-    names.append(biz["name"])    
+    names.append(biz["name"]) 
+ 
 
 
 address = []

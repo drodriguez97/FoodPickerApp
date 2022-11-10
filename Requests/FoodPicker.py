@@ -10,7 +10,7 @@ n = "No"
 locations = []
 for name,address in new_list:
     locations.append((name , address))
-    
+
 
 while True:
     user_choice = input("Would like to drink coffee today? Yes or No? ") 
@@ -26,6 +26,7 @@ while True:
         location = ('. '.join(str(x) for x in location)) #add period after location name
         print(f'You should go to {location}. ')
         break  
+    
     
    
     
